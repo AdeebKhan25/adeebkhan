@@ -1,0 +1,14 @@
+@keyframes expand {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--width);
+    }
+  }
+  
+  .skill-bar-animation {
+    --width: 0;
+    animation: expand 1s ease-in-out forwards;
+  }
+  

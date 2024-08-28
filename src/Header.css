@@ -1,0 +1,48 @@
+.nav-item {
+    position: relative;
+    cursor: pointer;
+  }
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background-color: #385cfc; /* Use the text color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-item:hover {
+    color: #404040; /* Change color on hover */
+  }
+  
+  .nav-item:hover::after {
+    width: 100%; /* Animate underline from left to right */
+  }
+
+  .headline:hover {
+    color:black;
+  }
+
+  .dropdown-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  .dropdown-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .dropdown-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .dropdown-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+ 
