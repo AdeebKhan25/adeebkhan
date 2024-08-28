@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./Header.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 
 function useMediaQuery(query) {
   const [matches, setMatches] = React.useState(
@@ -20,9 +20,21 @@ function useMediaQuery(query) {
 }
 
 function Header() {
+  const navigate = useNavigate();
+
   const [marginBottomClass, setMarginBottomClass] = useState("mb-12");
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleClickToggle = (event, url) => {
+    event.preventDefault();
+    toggleMenu();
+    if (url === "https://github.com/AdeebKhan25") {
+      window.open(url, "_blank");
+    } else {
+      navigate(url);
+    }
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -124,6 +136,7 @@ function Header() {
           <div className="flex flex-col gap-2 p-2">
             <NavLink
               to={"/about"}
+              onClick={(event) => handleClickToggle(event, "/about")}
               className={({ isActive }) =>
                 isActive
                   ? "flex items-center nav-item font-medium text-black"
@@ -134,6 +147,7 @@ function Header() {
             </NavLink>
             <NavLink
               to={"/projects"}
+              onClick={(event) => handleClickToggle(event, "/projects")}
               className={({ isActive }) =>
                 isActive
                   ? "flex items-center nav-item font-medium text-black"
@@ -144,6 +158,9 @@ function Header() {
             </NavLink>
             <a
               href="https://github.com/AdeebKhan25"
+              onClick={(event) =>
+                handleClickToggle(event, "https://github.com/AdeebKhan25")
+              }
               className="flex items-center nav-item"
               target="_blank"
             >
