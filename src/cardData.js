@@ -10,7 +10,7 @@ export const cardData = [
     access: "https://www.google.co.in",
   },
   {
-    heading: "GTA VI",
+    heading: "GTA VI Best Game",
     content:
       "Another strong alien. This one is perfect for stealth missions and can easily take down enemies without making a sound.",
     imgSrc: "/ProjectsPics/gta6.jpg",
