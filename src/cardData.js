@@ -1,31 +1,22 @@
 export const cardData = [
   {
-    heading: "Spider Man: Miles Morales",
+    heading: "Messenger",
     content:
-      "This is a good alien. You can choose this alien when the enemy is very strong. No one can face him. He is literally invincible.",
-    imgSrc: "/ProjectsPics/spiderman.jpg",
-    tags: ["React", "JS", "Front-End"],
-    isOnline: true,
-    git: "#",
-    access: "https://www.google.co.in",
-  },
-  {
-    heading: "GTA VI Best Game",
-    content:
-      "Another strong alien. This one is perfect for stealth missions and can easily take down enemies without making a sound.",
-    imgSrc: "/ProjectsPics/gta6.jpg",
-    tags: ["Node.js", "Backend", "API"],
-    isOnline: true,
-    git: "#",
-    access: "#",
-  },
-  {
-    heading: "House of the Dragon",
-    content: "A versatile alien.",
-    imgSrc: "/ProjectsPics/hotd.jpg",
-    tags: ["Python", "Data Science", "AI"],
+      "It is a full-stack, real-time messaging application designed for seamless and intuitive communication.",
+    imgSrc: "/ProjectsPics/Messenger.png",
+    tags: ["React", "Express", "MongoDB", "WebSockets", "TailWind"],
     isOnline: false,
-    git: "#",
+    git: "https://github.com/AdeebKhan25/Messenger",
     access: "#",
+  },
+  {
+    heading: "WeatherApp",
+    content:
+      "A responsive React application to search and display current weather information by city.",
+    imgSrc: "/ProjectsPics/WeatherApp.png",
+    tags: ["React", "API", "TailWind"],
+    isOnline: true,
+    git: "https://github.com/AdeebKhan25/WeatherApp",
+    access: "https://weatherapp-adeebkhan25s-projects.vercel.app/",
   },
 ];

@@ -4,7 +4,11 @@ const Card = ({ heading, content, imgSrc, tags, isOnline, git, access }) => {
   return (
     <div className="bg-white rounded-lg shadow-xl border border-gray-300 flex flex-col h-full">
       <div className="p-4 flex-grow">
-        <img src={imgSrc} alt={heading} className="h-full w-full border" />
+        <img
+          src={imgSrc}
+          alt={heading}
+          className="h-full w-full border border-gray-300"
+        />
       </div>
       <div className="p-4 flex-grow">
         <p className="mb-3 font-medium text-2xl">{heading}</p>
