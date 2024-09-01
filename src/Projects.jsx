@@ -4,6 +4,7 @@ import { cardData } from "./cardData";
 function Projects() {
   return (
     <div className="w-full md:w-4/5 mx-auto p-4 font-pPins">
+      <div className="text-3xl font-bold tracking-tighter mb-5">Projects</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {cardData.map((data, index) => (
           <Card
