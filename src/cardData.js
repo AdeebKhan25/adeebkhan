@@ -5,9 +5,9 @@ export const cardData = [
       "An AI model that generates original music 🎵 using LSTM-based neural networks.",
     imgSrc: "/ProjectsPics/AI_Music_Generator.png",
     tags: ["Machine Learning", "AI", "Tensorflow", "Python", "Neural Networks"],
-    isOnline: true,
-    git: "https://github.com/AdeebKhan25/WeatherApp",
-    access: "https://weatherapp-adeebkhan25s-projects.vercel.app/",
+    isOnline: false,
+    git: "https://github.com/AdeebKhan25/AI-Music-Generator",
+    access: "#",
   },
   {
     heading: "Messenger",
